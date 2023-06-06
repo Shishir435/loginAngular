@@ -46,7 +46,13 @@ $customeLogin-theme: mat.define-light-theme((
 html{
        font-family: 'Roboto', sans-serif;
 }
+:root{
+  --color-bg-1: #8080f7b7;
+  --color-bg-2: #4a4ae7ae;
+  --color-bg-3: #344fa2;
+  --color-bg: #f1fbff;
 
+}
 .bg-image{
     position: fixed;
     left: 0;
@@ -55,10 +61,11 @@ html{
     height: 100%;
     opacity: 0.6;
     z-index: -10;
-    background-image: url(./assets/nature-background1920.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    --webkit-filter: blur(2px);
-    filter: blur(2px);
+    background-color: var(--color-bg);
+    // background-image: url(./assets/nature-background1920.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // --webkit-filter: blur(2px);
+    // filter: blur(2px);
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
