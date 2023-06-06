@@ -1,42 +1,81 @@
-<section class="login__section">
+<div class="container" id="container">
+  <div class="form-container sign-up-container">
 
-
-  <div class="main-div">
-
-    <div class="image-div">
-      <figure>
-        <img class="login__image" src="../../assets/loginImage.png" alt="login image">
-      </figure>
-    </div>
-
-
-    <div class="login">
-      <h1>Login</h1>
-      <form action="" class="login__form">
-
+    <div class="sign-up-container--inner">
+      <form action="#" class="form__signup">
+        <h1>Sign UP</h1>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input type="email" class="custom-input" matInput placeholder="Enter your email" />
+        </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>Username</mat-label>
           <input class="custom-input" matInput placeholder="Enter your username" />
         </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>Password</mat-label>
-          <input matInput type="password" placeholder="Enter your password" class="form__input" />
+          <input matInput type="password" placeholder="Enter your password" />
         </mat-form-field>
 
-        <button mat-raised-button color="primary" type="submit" class="btn__login">Login</button>
-
-        <button mat-button color="primary" class="btn__forget">Forget Password?</button>
-        <mat-divider class="divider">Or</mat-divider>
-        <!-- <mat-divider ></mat-divider> -->
-        <a mat-button href="#" color="primary" class="btn__create">Create Account</a>
+        <button mat-raised-button color="primary" type="submit" class="btn__login">Sign Up</button>
       </form>
+      <p class="sign-up-para">Already have an account</p>
+      <button class="ghost btn-ghost"   id="signIn" (click)="removeClassFromComponent()">Sign In</button>
+    </div>
+
+  </div>
+  <div class="form-container sign-in-container">
 
 
+    <div class="sign-in-container--inner">
+      <form action="#" class="form__signin">
+        <h1>Sign In</h1>
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input class="custom-input" matInput placeholder="Enter your username" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Enter your password" />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" class="btn__login">Sign In</button>
+        <button mat-button color="primary" class="btn__forget">Forget Password?</button>
+
+      </form>
+      <p class="sign-in-para">Don't have an account</p>
+      <button class="ghost btn-ghost" id="signUp" (click)="addClassFromComponent()">Sign Up</button>
     </div>
 
 
   </div>
-</section>
+
+  <!-- The overlay code goes here -->
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+
+        <img class="overlay-left__image"
+          src="../../assets/people-working-office-making-presentation-negotiating-discussing-business-issues-developing-ideas_17.png"
+          alt="img">
+        <!-- <button class="ghost btn-ghost" id="signIn" (click)="removeClassFromComponent()">Sign In</button> -->
+      </div>
+      <div class="overlay-panel overlay-right">
+
+        <img class="overlay-right__image" src="../../assets/loginImage.png" alt="img">
+        <!-- <button class="ghost btn-ghost" id="signUp" (click)="addClassFromComponent()">Sign Up</button> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 
 <!--  user  &#128100;
